@@ -27,6 +27,12 @@ class Calculator:
     def power(self, base, exponent):
         """Calculate base raised to exponent"""
         return base ** exponent
+    
+    def modulo(self, a, b):
+        """Calculate the remainder of a divided by b"""
+        if b == 0:
+            raise ValueError("Cannot modulo by zero")
+        return a % b
 
 
 def main():
