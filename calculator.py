@@ -33,6 +33,12 @@ class Calculator:
         if b == 0:
             raise ValueError("Cannot modulo by zero")
         return a % b
+    
+    def square_root(self, a):
+      """Calculate square root"""
+      if a < 0:
+          raise ValueError("Cannot calculate square root of negative number")
+      return a ** 0.5
 
 
 def main():
