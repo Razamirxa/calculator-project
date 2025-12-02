@@ -19,7 +19,7 @@ python test_calculator.py
 ```
 
 ## Team Members
-- Add your name here when you contribute!
+Raza ul Mustafa
 
 ## Contributing
 1. Fork the repository
