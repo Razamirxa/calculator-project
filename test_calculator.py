@@ -43,6 +43,16 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calc.power(2, 3), 8)
         self.assertEqual(self.calc.power(5, 2), 25)
 
+    def test_square_root(self):
+        """Test square root operation"""
+        self.assertEqual(self.calc.square_root(16), 4)
+        self.assertEqual(self.calc.square_root(9), 3)
+  
+    def test_square_root_negative(self):
+        """Test square root of negative raises error"""
+        with self.assertRaises(ValueError):
+          self.calc.square_root(-4)
+
 
 if __name__ == "__main__":
     unittest.main()
