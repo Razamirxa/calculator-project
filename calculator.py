@@ -39,6 +39,10 @@ class Calculator:
       if a < 0:
           raise ValueError("Cannot calculate square root of negative number")
       return a ** 0.5
+    
+    def absolute(self, a):
+      """Return absolute value"""
+      return abs(a)
 
 
 def main():
